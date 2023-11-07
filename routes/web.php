@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AliefController;
 // use Illuminate\Foundation\Http\FormRequest;
 use App\Http\Requests\PostRequest;
+use App\Http\Controllers\PostController; //load controller post
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,8 +23,10 @@ use App\Http\Requests\PostRequest;
 Route::get('/', [AliefController::class,'home'])->name('home');
 Route::get('/tentang', [AliefController::class,'tentang'])->name('tentang');
 Route::get('/kontak', [AliefController::class,'kontak'])->name('kontak');
+Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
 
 //Form Validation
 Route::post('/kontak', [AliefController::class,'formsubmit'])->name('submit');
 
 //CRUD
+Route::resource('post', PostController::class);

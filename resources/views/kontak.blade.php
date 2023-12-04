@@ -13,25 +13,27 @@
 font-family: Arial, Helvetica, sans-serif;
 }
 .nama{
-margin-right: 25px; 
-margin-left: 45px; 
+margin-right: 25px;
+margin-left: 45px;
 }
 .no{
-margin-right: 45px; 
+margin-right: 45px;
 }
 .pesan{
-margin-right: 45px; 
+margin-right: 45px;
 }
 .email{
-margin-right: 45px; 
+margin-right: 45px;
 }
 </style>
+<a class="navbar-brand" href="#"><img src="/img/PRAKARSAicon.png" alt="" class="navbar-brand" width="40"><span
+    class="text-warning">SCOUT</span>PRAKARSA</a>
 <!-- Contact Section -->
 <section class="py-5" id="contact">
     <div class="container-xxl py-5">
         <div class="col-12 mt-5 d-flex flex-column text-center justify-content-center">
             <h2 class="text-black bold">CONTACT IN HERE</h2>
-            
+
         </div>
         <div class="row pt-4 ">
             <div class="col-12">
@@ -43,7 +45,7 @@ margin-right: 45px;
                                 <input type="text" name="name" class="form-control app-form-control @error('name') is-invalid @enderror" id="floatingInput" placeholder="Enter Name*"
                                     value="{{old('name')}}">
                                     @error('name')
-                                        <div class="invalid-feedback" style="">{{$message}}</div>
+                                        <div class="invalid-feedback">{{$message}}</div>
                                     @enderror
                                 <label for="floatingInput">Enter Name</label>
                             </div>
@@ -87,7 +89,7 @@ margin-right: 45px;
                                 <table style="width:100%">
                                     <tr>
                                       <th>Name</th>
-                                      <th>Email</th> 
+                                      <th>Email</th>
                                       <th>Number</th>
                                       <th>Message<th>
                                     </tr>
@@ -97,9 +99,9 @@ margin-right: 45px;
                                       <td>{{ session('alif.kontak')}} </td>
                                       <td>{{ session('alif.message')}} </td>
                                     </tr>
-                                  </table>                
-                            </div> 
-                            @endif                        
+                                  </table>
+                            </div>
+                            @endif
                         </div>
                     </div>
                 </form>

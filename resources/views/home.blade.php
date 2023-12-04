@@ -1,4 +1,6 @@
 @extends('halamanutama')
+<a class="navbar-brand" href="#"><img src="/img/PRAKARSAicon.png" alt="" class="navbar-brand" width="40"><span
+    class="text-warning">SCOUT</span>PRAKARSA</a>
  <!-- gambar -->
  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -151,4 +153,3 @@
     </div>
   </footer>
   <!-- footer ends -->
-  

@@ -9,13 +9,12 @@ class User extends AuthUser
 {
     use HasFactory;
 
-    protected $table = 'tb_user';
+    protected $table = 'users';
     protected $primaryKey = 'id_user';
 
     protected $fillable = [
         'nama_user',
         'email',
         'password',
-        'level',
     ];
 }

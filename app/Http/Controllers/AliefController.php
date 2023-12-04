@@ -17,6 +17,9 @@ class AliefController extends Controller
     public function index(){
         return view ('posts.index');
     }
+    public function login(){
+        return view ('login');
+    }
 
     public function formsubmit(PostRequest $request){
         $mangalif = $request->validate(PostRequest::rules());

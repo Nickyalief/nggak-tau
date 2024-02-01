@@ -61,7 +61,7 @@ margin-right: 45px;
 
                             <div class="form-floating mb-3">
                                 <input type="number" name="kontak" class="form-control @error('kontak') is-invalid @enderror" id="floatingPassword"
-                                    placeholder="Enter Phone*" >
+                                    placeholder="Enter Phone*" value="{{old('kontak')}}">
                                     @error('kontak')
                                         <div class="invalid-feedback">{{$message}}</div>
                                     @enderror
@@ -71,7 +71,7 @@ margin-right: 45px;
 
                         <div class="form-floating col-lg-6">
                             <textarea name="message" class="form-control  @error('message') is-invalid @enderror" placeholder="Leave a comment here" id="floatingMessage"
-                                style="height: 206px;resize: none" ></textarea>
+                                style="height: 206px;resize: none" value="{{old('message')}}"></textarea>
                                 @error('message')
                                         <div class="invalid-feedback">{{$message}}</div>
                                     @enderror
